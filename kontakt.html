@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pogotowie komputerowe</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="kontener">
+        <header>
+            <img src="animacja.gif">
+        </header>
+        <div id="menu">
+            <a href="index.html">O nas</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+        <main>
+            <div></div>
+            <div>
+                <h3>Formularz kontaktowy</h3>
+                <table>
+                    <tr>
+                        <td>Imię:</td>
+                        <td><input type="text" id="imie"></td>
+                    </tr>
+                    <tr>
+                        <td>Nazwisko:</td>
+                        <td><input type="text" id="nazwisko"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><input type="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Usługa</td>
+                        <td><select id="usluga">
+                                <option value="Naprawa komputera">Naprawa komputera</option>
+                                <option value="Odzyskiwanie danych">Odzyskiwanie danych</option>
+                                <option value="Problemy z oprogramowaniem">Problemy z oprogramowaniem</option>
+                                <option value="Konfiguracja sieci LAN">Konfiguracja sieci LAN</option>
+                                <option value="Inne">Inne</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="checkbox" id="wiadomosc">Wyślij kopię wiadomości</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="reset">Resetuj</button>
+                            <button type="submit" onclick="s()">Prześlij</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div></div>
+        </main>
+        <footer>
+            <p>Autor strony: <b>PESEL</b></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
